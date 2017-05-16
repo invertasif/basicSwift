@@ -1,0 +1,27 @@
+/*convert decimal to binary: c language code to convert an integer from decimal
+number system(base-10) to binary number system(base-2). Size of integer is assumed 
+to be 32 bits. We use bitwise operators to perform the desired task. We right shift 
+the original number by 31, 30, 29, ..., 1, 0 bits using a loop and bitwise AND the
+number obtained with 1(one), if the result is 1 then that bit is 1 otherwise it is 0(zero).
+*/
+
+import Foundation
+
+
+var number = 31
+let binary = String(number, radix: 2)
+
+let decimal = Int(binary, radix: 2)
+
+let anotherDecimal = 61
+let hexadecimal = String(anotherDecimal, radix: 16)
+
+let hexaDecimalToDecimal = Int(hexadecimal, radix: 16)
+
+let string = "face"
+let hexaDecimalToBinary = String(Int(string, radix: 16)!, radix: 2)
+
+
+
+
+
