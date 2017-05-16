@@ -1,0 +1,11 @@
+// Add digits of number
+var digits = 12345
+var sum = 0
+var anotherDegits = digits
+while digits != 0 {
+    var reminder = digits % 10
+    sum = sum + reminder
+    digits = digits / 10
+    
+}
+print("Sum of digits \(anotherDegits) is \(sum) ")
