@@ -1,0 +1,20 @@
+//program to check whether input alphabet is a vowel or not
+var char: Character = "a"
+if char == "a" || char == "e" || char == "i" || char == "o" || char == "u" {
+    print("This charecter is vowel")
+} else {
+    print("This charechter is consonant")
+}
+
+// program to check leap year
+let year: Int = 2012
+
+if year % 400 == 0 {
+    print("This is leap year")
+} else if year % 100 == 0 {
+    print("This is leap year")
+} else if year % 4 == 0 {
+    print("This is leas Year")
+} else {
+    print("This is not leap year")
+}
