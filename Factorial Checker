@@ -1,0 +1,23 @@
+// Factorial program using recursive function
+
+func factorial(_ n: Int) -> Int {
+    if n == 0 {
+        return 1
+    }
+    else {
+        
+        let a = n * factorial(n - 1)
+        return a
+    }
+}
+
+factorial(5)
+
+// Factorial program using for in loop 
+
+var factNumber = 5
+var fact = 1..<5
+for item in fact {
+    factNumber = factNumber * item
+}
+print(factNumber)
