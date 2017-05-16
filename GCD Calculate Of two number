@@ -1,0 +1,23 @@
+
+
+/* program to find hcf and lcm: The code below finds highest common
+factor and least common multiple of two integers. HCF is also
+known as greatest common divisor(GCD) or greatest common factor(gcf). */
+
+var a, b, t, hcf, lcm: Int;
+
+var x = 9
+var y = 24
+
+a = x
+b = y
+while (b != 0) {
+    t = b
+    b = a % b
+    a = t
+}
+hcf = a
+lcm = (x * y) / hcf
+
+print("greatest common divisor \(hcf)")
+print("greatest common factor \(lcm)")
