@@ -1,0 +1,28 @@
+
+
+// program to find nCr and nPr: This code calculate nCr which is n!/(r!*(n-r)!) and nPr = n!/(n-r)!
+
+
+func factorial(_ n: Int) -> Int {
+    if n == 0 {
+        return 1
+    } else {
+        let a = n * factorial(n - 1)
+        return a
+    }
+}
+
+func findnCr(n: Int, r: Int) -> Int {
+    let result = factorial(n) / (factorial(r) * factorial((n-r)))
+    return result
+    
+}
+
+func findnPr(n: Int, r: Int) -> Int {
+    let result = factorial(n) / factorial((n - r))
+    return result
+}
+
+factorial(5)
+print(findnCr(n: 5, r: 2))
+print(findnPr(n: 5, r: 2))
